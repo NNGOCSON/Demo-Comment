@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </html><link rel="stylesheet" href="style.css">
+  <title>Bình Luận</title>
+</head>
+<body>
+  <div class="container" ng-app="CommentApp">
+  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 commentBox">
+         <div ng-controller="PostController">
+             <h4>Nhập Bình Luận</h4>
+              <form>
+                  <div class="input-group"> 
+                    <span class="input-group-addon" id="basic-addon1">
+                      <img class="img-icon" src="avt-1.JPG" />
+                      </span> 
+                      <input type="text" ng-model='commentTxt' class="form-control" placeholder="Write a comment" > 
+                  </div>
+                  <div class="btn-block text-right">
+                    <input class="btn btn-success" ng-click='submit()' type='submit' value='Gửi'>
+                  </div>
+              </form>
+              
+              <ul>
+                <li ng-repeat='comment in comments track by $index'>
+                  <div class='comment'>
+                    <img class="img-icon" src="avt-1.JPG" />
+                    <div class="com">
+                      <span><a href="javascript:void(0);" style="text-decoration: none;">{{comment.name}}</a></span> {{comment.commentTxt}}
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              
+         </div>
+    </div> 
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="comment.js"></script>
+</body>
+

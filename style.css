@@ -1,0 +1,28 @@
+  body{background:#e9ebee;}
+  .commentBox{ background-color: #FFF; border-radius:3px 3px; padding-top:15px; padding-bottom:15px; margin-top:3%;border: 1px solid #dddfe2;}
+  .commentBox h4{ margin-bottom:30px;}
+  .input-group-addon{ padding:0; padding-right:10px; background:none; border:none;}
+  .img-icon{
+	  border-radius: 50%;
+    overflow: hidden;
+	    height: 32px;
+    width: 32px;
+  }
+  .form-control{border-radius:16px !important;}
+  .btn-block{ margin-top:10px;}
+  .comment span{ font-weight:bold;}
+      ul{ list-style:none;}
+      ul li{ margin-bottom:10px; border-bottom:#EEE 1px solid; padding-bottom:6px;}
+      ul li:last-child{border-bottom:none;}
+  .comment{
+      -webkit-flex-wrap: wrap;
+    	flex-wrap: wrap;
+		  -ms-box-orient: horizontal;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex; 
+      display: flex; 
+  }
+  .comment .img-icon{ margin-right:10px;}
